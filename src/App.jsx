@@ -8,12 +8,15 @@ import img2 from "./assets/5e53523e8e24936f0704284f_peep-17.png";
 
 import img from "./assets/young-male-designer-using-graphics-tablet-while-working-with-com.jpg";
 import SolidImageLink from "./components/SolidImageLink";
+import TopHeader from "./components/TopHeader";
+import CategorySolution from "./components/CategorySolution";
 
 function App() {
   return (
     <div className="App">
+      <TopHeader />
       <Header />
-      <section className="pt-40 px-40 bg-cover bg-center bg-section-2 flex">
+      <section className="pt-10 px-40 bg-cover bg-center bg-section-2 flex">
         {/* <section className="pt-20 px-40 bg-gradient-to-tr to-indigo-400 from-emerald-200 flex"> */}
         <Banner />
       </section>
@@ -113,6 +116,7 @@ function App() {
           officiis magnam.
         </p>
         <h3 className="font-bold text-4xl mb-10text-black mb-10">Categorías</h3>
+        <CategorySolution />
         Marketing, Aplicaciones UI, Ecommerce
         <h3 className="font-bold text-4xl mb-10text-black mb-10">
           Tecnologías
@@ -146,45 +150,32 @@ function App() {
         </div>
       </section>
 
-      <section id="ejemplo1" className="bg-cover bg-center bg-section-2">
-        <div className="backdrop-blur-lg bg-indigo-200/40 py-10 px-40">
-          <h3 className="font-bold text-4xl mb-4 text-white">
-            Lorem ipsum dolor sit.
-          </h3>
-          <div className="w-full flex">
-            <div className="my-auto w-1/2 pr-10">
-              <h3 className="font-bold text-xl mb-4 text-white">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </h3>
-              <p className="font-normal text-md mb-4 text-white">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Accusantium quo, saepe pariatur modi assumenda provident est
-                nemo debitis?
-              </p>
-              <Button label={"Leer más"} />
-            </div>
-            <div className="w-3/4 my-auto flex overflow-auto">
-              <Card />
-              <Card />
-              <Card />
-              <Card />
+      <section id="proyectos" className="bg-cover bg-center bg-section-2">
+        <div className="px-40 py-20 backdrop-blur-lg bg-indigo-200/40">
+          <div className="pt-20 pb-6">
+            <h3 className="font-bold text-4xl mb-4 text-indigo-600">
+              Proyectos y experiencia
+            </h3>
+            <div className="w-full flex">
+              <div className="my-auto w-1/2 pr-10">
+                <h3 className="font-bold text-xl mb-4 text-white">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </h3>
+                <p className="font-normal text-md mb-4 text-white">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Accusantium quo, saepe pariatur modi assumenda provident est
+                  nemo debitis?
+                </p>
+                <Button label={"Leer más"} />
+              </div>
+              <div className="w-3/4 my-auto flex overflow-auto">
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+              </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      <section id="contactar" className="bg-slate-300">
-        <div className="px-40 py-20">
-          <h3 className="font-bold text-4xl mb-4 text-white">
-            Lorem ipsum dolor sit.
-          </h3>
-          <h3 className="font-bold text-xl mb-4 text-white">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          </h3>
-          <p className="font-normal text-md mb-4 text-white">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
-            quo, saepe pariatur modi assumenda provident est nemo debitis?
-          </p>
           <div className="grid grid-cols-2">
             <Card />
             <Card />

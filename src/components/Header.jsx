@@ -1,15 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 
 const navigation = [
   { name: "Inicio", href: "#" },
-  { name: "Quien soy", href: "#" },
+  { name: "Quien soy", href: "#quiensoy" },
   { name: "Casos de éxito", href: "#" },
   { name: "Tecnologias", href: "#" },
 ];
 
 const Header = () => {
+  window.addEventListener("scroll", (event) => {
+    let scroll = window.scrollY;
+    scroll > 100 ? setIsInTop(false) : setIsInTop(true);
+  });
+  const [isInTop, setIsInTop] = useState(true);
+
   return (
-    <div className="fixed z-50 w-full px-40 border-b-3 backdrop-blur-lg bg-slate-50/10">
+    <header
+      className={
+        isInTop
+          ? "bg-indigo-400 sticky z-50 top-0 w-full px-40 backdrop-blur-3xl ease-in-out duration-500 border-b border-b-gray-light/40"
+          : "bg-black/30 sticky z-50 top-0 w-full px-40 backdrop-blur-lg ease-in-out duration-500 border-b border-b-gray-light/40"
+      }
+    >
       <nav className="flex justify-between h-20">
         <span className="my-auto">
           <svg
@@ -29,7 +41,7 @@ const Header = () => {
             <line x1="17.5" y1="15" x2="9" y2="15"></line>
           </svg>
         </span>
-        <div className="flex justify-items-center align-middle my-auto ml-10 pr-4 space-x-8">
+        <div className="hidden lg:flex justify-items-center align-middle my-auto ml-10 pr-4 space-x-8">
           {navigation.map((item) => (
             <a
               key={item.name}
@@ -47,7 +59,7 @@ const Header = () => {
           </a>
         </div>
       </nav>
-    </div>
+    </header>
   );
 };
 
