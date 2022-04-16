@@ -12,6 +12,9 @@ module.exports = {
       borderRadius: {
         "4xl": "2rem",
       },
+      boxShadow: {
+        inset: "inset 0px 0px 40px 40px red",
+      },
       colors: {
         primary: "#A4D076",
         secondary: "#EEEFD1",
