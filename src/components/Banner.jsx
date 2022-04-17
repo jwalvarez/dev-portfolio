@@ -30,7 +30,7 @@ const Banner = () => {
           <h2 className="text-gray-light font-black text-2xl my-auto">
             Desarrollador Front-end
           </h2>
-          <div className="my-6 flex">
+          <div className="my-6 md:flex block">
             <Button label={"Contactar"} href="#contactar" />
             <Button label={"Descargar CV"} type="" showIcon={true} />
           </div>
@@ -39,7 +39,7 @@ const Banner = () => {
           <img className="w-3/4" src={img} alt="" />
         </div> */}
       </div>
-      <div className="flex">
+      <div className="flex md:justify-start justify-center">
         <SimpleSocialIcon path={icons.github} />
         <SimpleSocialIcon path={icons.dribbble} />
         <SimpleSocialIcon path={icons.linkedin} />

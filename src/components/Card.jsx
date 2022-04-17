@@ -7,7 +7,7 @@ const colors = {
 
 const Card = () => {
   return (
-    <div className="bg-indigo-50 w-65 h-60 mx-4 my-6 p-8 rounded-4xl cursor-default drop-shadow-[0px_0px_0_rgba(79,70,229,1)] hover:-translate-y-4 hover:drop-shadow-[0px_10px_0_rgba(79,70,229,1)] ease-linear duration-75">
+    <div className="bg-indigo-50 w-65 h-60 mr-4 my-6 p-8 rounded-4xl cursor-default drop-shadow-[0px_0px_0_rgba(79,70,229,1)] hover:-translate-y-4 hover:drop-shadow-[0px_10px_0_rgba(79,70,229,1)] ease-linear duration-75">
       <div className="flex justify-items-center">
         <span className="my-2 mr-2 p-2 rounded-full bg-indigo-400 border-8 border-indigo-200">
           <svg

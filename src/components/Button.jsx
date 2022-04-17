@@ -6,8 +6,8 @@ const Button = ({ label, type = "primary", href, showIcon = false }) => {
       href={href}
       className={
         type == "primary"
-          ? "mr-4 my-auto w-40 h-14 px-10 flex justify-center py-2 border-2 border-transparent text-base font-medium rounded-2xl text-white bg-indigo-500 hover:bg-indigo-600 drop-shadow-[0px_0px_0_rgba(79,70,229,1)] hover:-translate-y-1 hover:drop-shadow-[6px_6px_0_rgba(0,0,0,1)] ease-linear duration-75 cursor-pointer"
-          : "mr-4 my-auto w-42 h-14 px-10 flex border-2 border-gray-light justify-center py-2 text-base font-medium rounded-2xl text-gray-light hover:bg-indigo-100 hover:border-indigo-100 hover:text-indigo-600 ease-linear duration-300 cursor-pointer"
+          ? "mr-4 my-2 ml-0 w-auto h-14 px-10 flex justify-center py-2 border-2 border-transparent text-base font-medium rounded-2xl text-white bg-indigo-500 hover:bg-indigo-600 drop-shadow-[0px_0px_0_rgba(79,70,229,1)] hover:-translate-y-1 hover:drop-shadow-[6px_6px_0_rgba(0,0,0,1)] ease-linear duration-75 cursor-pointer"
+          : "mr-4 my-2 ml-0 w-auto h-14 px-10 flex border-2 border-gray-light justify-center py-2 text-base font-medium rounded-2xl text-gray-light hover:bg-indigo-100 hover:border-indigo-100 hover:text-indigo-600 ease-linear duration-300 cursor-pointer"
       }
     >
       {showIcon && (

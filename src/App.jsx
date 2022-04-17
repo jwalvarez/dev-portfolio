@@ -43,18 +43,18 @@ function App() {
         id="banner"
         className="-mt-20 bg-cover bg-center bg-section-2 flex"
       >
-        <div className="w-full backdrop-blur-lg bg-black/60 py-40 px-40">
+        <div className="md:px-40 px-10 w-full backdrop-blur-lg bg-black/60 py-40">
           <Banner />
         </div>
       </section>
       <section
         id="quiensoy"
-        className="px-40 bg-gradient-to-tr from-indigo-600 to-indigo-400 py-32"
+        className="md:px-40 px-10 bg-gradient-to-tr from-indigo-600 to-indigo-400 py-32"
       >
         <h3 className="font-bold text-4xl text-gray-light mb-10">
           Acerca de mi
         </h3>
-        <div className="grid grid-cols-2">
+        <div className="grid lg:grid-cols-2 grid-cols-1">
           {aboutMe.map((description) => (
             <div className="flex mr-10 mb-10">
               <span>
@@ -86,7 +86,7 @@ function App() {
         <h3 className="font-bold text-4xl text-gray-light my-10">
           Tecnologías
         </h3>
-        <div className="grid grid-cols-5">
+        <div className="grid md:grid-cols-5 sm:grid-cols-3 grid-cols-2">
           <SolidImageLink
             img={
               "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png"
@@ -116,17 +116,17 @@ function App() {
       </section>
 
       <section id="proyectos" className="bg-cover bg-center bg-section-2">
-        <div className="px-40 py-20 backdrop-blur-lg bg-black/40">
+        <div className="md:px-40 px-10 py-20 backdrop-blur-lg bg-black/40">
           <div className="pt-20 pb-6">
             <div className="flex justify-between">
-              <h3 className="font-bold text-4xl mb-4 text-indigo-600">
+              <h3 className="font-bold lg:text-4xl text-2xl my-auto text-indigo-600">
                 Proyectos y experiencia
               </h3>
               <Button label={"Ver todos"} type="" showIcon={false} />
             </div>
-            <div className="w-full flex">
-              <div className="my-auto w-1/2 pr-10">
-                <h3 className="font-bold text-xl mb-4 text-white">
+            <div className="w-full lg:flex block">
+              <div className="my-auto lg:w-1/2 md:pr-10">
+                <h3 className="font-bold text-xl my-4 text-white">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 </h3>
                 <p className="font-normal text-md mb-4 text-white">
@@ -136,7 +136,7 @@ function App() {
                 </p>
                 <Button label={"Leer más"} />
               </div>
-              <div className="w-3/4 my-auto flex overflow-auto">
+              <div className="lg:w-3/4 my-auto flex overflow-auto">
                 <Card />
                 <Card />
                 <Card />
@@ -151,29 +151,12 @@ function App() {
           </div>
         </div>
       </section>
-
-      <section id="contactar">
-        <div className="bg-gradient-to-tl from-purple-500 via-indigo-500 to-black h-auto flex px-40">
-          <div className="w-1/2 flex">
-            <img className="w-3/4" src={img2} alt="" />
-          </div>
-          <div className="my-auto w-1/2">
-            <h2 className="font-black text-2xl my-auto">
-              Escríbeme <br />
-            </h2>
-            <h2 className="font-black text-4xl my-auto">
-              Puedes ponerte en contacto conmigo por WhatsApp <br />
-            </h2>
-            <h2 className="font-black text-2xl my-auto">
-              Tambien puedes descargar mi Curriculum
-            </h2>
-            <div className="my-6 flex">
-              <Button label={"Contactar"} />
-              <Button label={"Descargar CV"} type="" />
-            </div>
-          </div>
+      <section id="contactar" className="">
+        <div className="py-20 bg-gradient-to-tl from-purple-500 via-indigo-500 to-black h-auto flex px-40 w-full">
+          <Banner />
         </div>
       </section>
+
       <Footer />
     </div>
   );
