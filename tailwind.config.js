@@ -27,6 +27,9 @@ module.exports = {
         gray: "#8492a6",
         "gray-light": "#d3dce6",
       },
+      animation: {
+        "ping-slow": "ping 2s cubic-bezier(0, 0, 0.2, 1) infinite",
+      },
     },
   },
   plugins: [],

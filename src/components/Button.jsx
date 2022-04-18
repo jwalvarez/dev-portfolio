@@ -1,8 +1,9 @@
 import React from "react";
 
-const Button = ({ label, type = "primary", href, showIcon = false }) => {
+const Button = ({ label, type = "primary", href, showIcon = false, id }) => {
   return (
     <a
+      id={id}
       href={href}
       className={
         type == "primary"
