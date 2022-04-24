@@ -25,7 +25,7 @@ const Card = () => {
             />
           </svg>
         </span>
-        <h3 className="font-bold text-lg my-auto">Competente</h3>
+        <h3 className="font-bold text-lg my-auto">Loremipsum</h3>
       </div>
       <p className="font-normal text-sm">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit.

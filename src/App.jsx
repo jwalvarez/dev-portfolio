@@ -152,7 +152,7 @@ function App() {
         </div>
       </section>
       <section id="contactar" className="">
-        <div className="py-20 bg-gradient-to-tl from-purple-500 via-indigo-500 to-black h-auto flex px-40 w-full">
+        <div className="py-20 bg-gradient-to-bl from-indigo-400 to-indigo-500 h-auto flex px-40 w-full">
           <Banner />
         </div>
       </section>
@@ -171,7 +171,7 @@ function App() {
           <a className="absolute my-auto w-full h-full bg-green/80 rounded-full animate-ping-slow"></a>
           <a
             className="relative z-50"
-            href="https://wa.me/573015351652?text=Hola!%20"
+            href="https://wa.me/571111111111?text=Hola!%20"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

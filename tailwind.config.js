@@ -16,9 +16,9 @@ module.exports = {
         inset: "inset 0px 0px 40px 40px red",
       },
       colors: {
-        primary: "#A4D076",
+        primary: "#059669",
+        "primary-light": "#34d399",
         secondary: "#EEEFD1",
-        "primary-light": "#D7EFB5",
         pink: "#ff49db",
         orange: "#ff7849",
         green: "#13ce66",

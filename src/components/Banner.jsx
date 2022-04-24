@@ -25,7 +25,7 @@ const Banner = () => {
             Hola, <br />
           </h2>
           <h2 className="text-gray-light font-black text-4xl my-auto">
-            Soy Jhon Álvarez <br />
+            Soy Jhon <br />
           </h2>
           <h2 className="text-gray-light font-black text-2xl my-auto">
             Desarrollador Front-end
